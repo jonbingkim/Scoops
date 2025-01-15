@@ -5,9 +5,9 @@ export const Started = () => {
   return (
     <div className="grid h-full w-full items-center justify-center text-center">
       <div className="flex flex-col items-center">
-        <div>
-        <img className="h-100 w-96 rounded-lg" src={sickoMode} alt="Sicko Mode" />
-        <h3 className='text-lg absolute inset-1 flex items-center justify-center'>Our History</h3>
+        <div className="relative">
+          <img className="h-100 w-96 rounded-lg" src={sickoMode} alt="Sicko Mode" />
+          <h3 className='text-xl absolute inset-0 flex items-center justify-center bg-opacity-50  text-white'>Our History</h3>
         </div>
         <div className="text-lg w-1/2">
           our story starts in the coming age of fixie bikes and OFWGKTA, in 2005 mad scientist tai kim opened up a quaint 
