@@ -3,7 +3,7 @@ import Body from "./client_components/body";
 import Footer from "./client_components/footer";
 function App() {
 	return (
-		<div className="col" style={{ backgroundColor: '#ffcccb' }}>
+		<div className="col" >
 			<Header />
 
 			<Body />

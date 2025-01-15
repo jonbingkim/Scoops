@@ -1,11 +1,14 @@
 import {Started} from "./started";
+import {Mission} from "./mission";
 import yorkpic from "../imgs/york.jpg";
 import chinatownpic from "../imgs/chinatown.jpg";
+
 
 export default function Body() {
 	return (
 		<div className="flex flex-col items-center gap-10">
 			<Started/>
+			<Mission/>
 			<div className="flex flex-col items-center gap-8 justify-center md:flex-row">
 				<div className="relative text-center group">
 					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" src={yorkpic} alt="Scoops on York" />
