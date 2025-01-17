@@ -9,9 +9,9 @@ export default function Body() {
 		<div className="flex flex-col items-center gap-10">
 			<Started/>
 			<Mission/>
-			<div className="flex flex-col items-center gap-8 justify-center md:flex-row">
+			<div className="flex flex-col items-center gap-8 justify-center ">
 				<div className="relative text-center group">
-					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" src={yorkpic} alt="Scoops on York" />
+					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300" src={yorkpic} alt="Scoops on York" />
 					<div className="absolute inset-0 flex items-center justify-center">
 						<a
 							href="https://www.yelp.com/biz/scoops-los-angeles-4"
@@ -22,9 +22,10 @@ export default function Body() {
 							Scoops on York
 						</a>
 					</div>
+					
 				</div>
 				<div className="relative text-center group">
-					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" src={chinatownpic} alt="Scoops Chinatown" />
+					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300" src={chinatownpic} alt="Scoops Chinatown" />
 					<div className="absolute inset-0 flex items-center justify-center">
 						<a
 							href="https://www.yelp.com/biz/scoops-los-angeles-6"

@@ -73,4 +73,9 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+	text-stroke {
+
+		text-stroke: 1px solid black; /* Adjust stroke width and color as needed */
+
+	}
 }
