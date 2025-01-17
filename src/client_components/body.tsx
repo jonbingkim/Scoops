@@ -25,7 +25,35 @@ export default function Body() {
 					
 					
 				</div>
-				<div>poop</div>
+				<div>
+					<div>
+					Address: 5105 York Blvd, Los Angeles, CA 90042
+					</div>
+					<ol className='text-left w-'>
+						<strong>Hours</strong>
+						<li>
+							Sunday: 2 PM - 9 PM
+						</li>
+						<li>
+							Monday: Closed :)
+						</li>
+						<li>
+							Tuesday: 2 PM - 9 PM
+						</li>
+						<li>
+							Wednesday: 2 PM - 9 PM
+						</li>
+						<li>
+							Thursday: 2 PM - 9 PM
+						</li>
+						<li>
+							Friday: 2 PM - 9 PM
+						</li>
+						<li>
+							Saturday: 2 PM - 9 PM
+						</li>
+					</ol>
+				</div>
 			</div>
 			<div className="flex items-center gap-8 justify-center ">
 			<div className="relative text-center group">
@@ -41,7 +69,12 @@ export default function Body() {
 						</a>
 					</div>
 				</div>
-				<div>poop</div>
+				<div>
+					<div>
+					Address: 727 N Broadway #125, Los Angeles, CA 90012
+					</div>
+					
+				</div>
 				</div>
 		</div>
 	);

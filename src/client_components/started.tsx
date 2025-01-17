@@ -1,4 +1,4 @@
-import sickoMode from "../imgs/scoopsSickomode.jpg"
+import sickoMode from "../imgs/uncletai.jpg"
 
 
 export const Started = () => {
