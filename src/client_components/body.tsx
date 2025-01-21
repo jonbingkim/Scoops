@@ -30,7 +30,7 @@ export default function Body() {
 					Address: 5105 York Blvd, Los Angeles, CA 90042
 					</div>
 					<ol className='text-left w-'>
-						<strong>Hours</strong>
+						<strong>Hours:</strong>
 						<li>
 							Sunday: 2 PM - 9 PM
 						</li>
