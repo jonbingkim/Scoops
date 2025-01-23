@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import logo from "../imgs/scoops_large.png";
 export default function Header() {
 
