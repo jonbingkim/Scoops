@@ -8,7 +8,7 @@ export const Locations = () => {
 
 			<section className="flex items-center gap-8 justify-evenly p-5 ">
 				<div className="flex text-center">
-          <div>
+          <div className="flex justify-center">
 					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300" src={yorkpic} alt="Scoops on York" />
 					<div className="absolute flex">
 						<a
@@ -35,7 +35,7 @@ export const Locations = () => {
 
 			<section className="flex items-center gap-8 justify-center p-5 ">
 				<div className="flex text-center justify-center">
-          <div>
+          <div className="flex justify-center">
 					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300" src={chinatownpic} alt="Scoops on York" />
 					<div className="absolute flex">
 						<a
