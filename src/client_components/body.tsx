@@ -1,6 +1,7 @@
 import {Started} from "./started";
 import {Mission} from "./mission";
 import { Locations } from "./locations";
+import { Buzzfeed } from "./buzzfeed";
 
 
 export default function Body() {
@@ -9,7 +10,7 @@ export default function Body() {
 			<Started/>
 			<Mission/>
 			<Locations/>
-			
+			<Buzzfeed/>
 		</section>
 	);
 }

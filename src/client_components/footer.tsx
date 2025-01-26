@@ -25,7 +25,7 @@ export default function Footer() {
 					</li>
 					<li className="bg-white shadow-md rounded-lg p-4 mb-2 text-center cursor-pointer" onClick={() => toggleAnswer(2)}>
 						<p className="font-semibold">Q: Can I place a custom order?</p>
-						{activeIndex === 2 && <p>A: We have a suggestion board in store</p>}
+						{activeIndex === 2 && <p>A: We have a suggestion board in store, we'll usually take a few that we see the most and make them :)</p>}
 					</li>
 				</ul>
 			</section>
@@ -34,7 +34,7 @@ export default function Footer() {
 				<h2 className="text-lg font-bold">Contact Us</h2>
 				<p className="text-sm">For inquiries, please reach out to us at:</p>
 				<p className="text-sm">Email: <a href="mailto:scoops2005@gmail.com" className="text-blue-500">scoops2005@gmail.com</a></p>
-				<p className="text-sm">Phone: <a href="tel:+1234567890" className="text-blue-500">+1 (234) 567-890</a></p>
+
 			</section>
 		</div>
 	);
