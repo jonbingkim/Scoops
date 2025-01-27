@@ -17,6 +17,14 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'], 
+        lilita: ['Lilita One', 'sans-serif'],
+        bona:['Bona Nova SC', 'sans-serif'],
+        merri:['Merriweather', 'sans-serif'],
+        dyna:['Dynapuff', 'sans-serif'],
+        fredoka:['Fredoka', 'sans-seirf']
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,4 +82,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

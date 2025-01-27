@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 export default function Footer() {
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -8,7 +7,7 @@ export default function Footer() {
 	};
 
 	return (
-		<div className="bg-gray-100 p-6 text-center">
+		<div className="font-fredoka text-xl bg-gray-100 p-6 text-center">
 			{/* About Us Section */}
 		
 			{/* FAQ Section */}

@@ -1,12 +1,14 @@
 import yorkpic from "../imgs/york.jpg";
 import chinatownpic from "../imgs/chinatown.jpg";
 
+ 
+
 
 export const Locations = () => {
   return (
     <section className="grid sm:flex md:flex flex-col items-center justify-center gap-6 ">
 
-			<section className="grid items-center gap-8 justify-center p-5 ">
+			<section className="grid items-center gap-8 justify-center p-6 ">
 				<div className=" grid sm:flex md:flex text-center justify-evenly">
           <div className="flex justify-center">
 					<img className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300" src={yorkpic} alt="Scoops on York" />
@@ -23,18 +25,18 @@ export const Locations = () => {
 					</div>
 					
 			
-				<div className="text-lg sm:w-1/2 sm:text-xl md:w-1/2 justify-center p-6">
+				<div className=" font-fredoka text-lg sm:w-1/2 sm:text-xl md:w-1/2 justify-center p-6">
 				<div className="">
-				<strong>Address: 5105 York Blvd,  Los Angeles,  CA  90042</strong>
+				<span className="text-blue-400">Address: 5105 York Blvd,  Los Angeles,  CA  90042</span>
         <ol>
-          <strong>Hours:</strong>
-          <li><strong>Monday</strong>: Closed :)</li>
-          <li><strong>Tuesday</strong>: 2 p.m. - 9 p.m.</li>
-          <li><strong>Wedneday</strong>: 2 p.m. - 9 p.m</li>
-          <li><strong>Thursday</strong>: 2 p.m. - 9 p.m</li>
-          <li><strong>Friday</strong>: 2 p.m. - 9 p.m</li>
-          <li><strong>Saturday</strong>: 2 p.m. - 9 p.m</li>
-          <li><strong>Sunday</strong>: 2 p.m. - 9 p.m</li>
+
+          <li>Monday: Closed :)</li>
+          <li>Tuesday: 2 p.m. - 9 p.m.</li>
+          <li>Wednesday: 2 p.m. - 9 p.m</li>
+          <li>Thursday: 2 p.m. - 9 p.m</li>
+          <li>Friday: 2 p.m. - 9 p.m</li>
+          <li>Saturday: 2 p.m. - 9 p.m</li>
+          <li>Sunday: 2 p.m. - 9 p.m</li>
         </ol>
 				</div>
 				</div>
@@ -62,18 +64,18 @@ export const Locations = () => {
 					
 					
 			
-				<div className="text-lg sm:w-1/2 sm:text-xl md:w-1/2   justify-center p-6">
+				<div className="font-fredoka text-lg sm:w-1/2 sm:text-xl md:w-1/2   justify-center p-6">
 				<div>
-				<strong>Address: 727 N Broadway #125, Los Angeles, CA 90012</strong>
-        <ol className="">
-          <strong>Hours:</strong>
-          <li><strong>Monday</strong>: Closed :)</li>
-          <li><strong>Tuesday</strong>: 12 p.m. - 6 p.m.</li>
-          <li><strong>Wedneday</strong>: 12 p.m. - 6 p.m</li>
-          <li><strong>Thursday</strong>: 12 p.m. - 6 p.m</li>
-          <li><strong>Friday</strong>: 12 p.m. - 7 p.m</li>
-          <li><strong>Saturday</strong>: 12 p.m. - 7 p.m</li>
-          <li><strong>Sunday</strong>: 12 p.m. - 6 p.m</li>
+				<span className="text-pink-400">Address: 727 N Broadway #125, Los Angeles, CA 90012</span>
+        <ol >
+   
+          <li>Monday: Closed :)</li>
+          <li>Tuesday: 12 p.m. - 6 p.m.</li>
+          <li>Wednesday: 12 p.m. - 6 p.m</li>
+          <li>Thursday: 12 p.m. - 6 p.m</li>
+          <li>Friday: 12 p.m. - 7 p.m</li>
+          <li>Saturday: 12 p.m. - 7 p.m</li>
+          <li>Sunday: 12 p.m. - 6 p.m</li>
           
         </ol>
 				</div>
