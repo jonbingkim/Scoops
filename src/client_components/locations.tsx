@@ -6,6 +6,7 @@ import chinatownpic from "../imgs/chinatown.jpg";
 
 export const Locations = () => {
   return (
+    //need to check on how to change the text inside the images to better one (maybe outlined text?)
     <section className="grid sm:flex md:flex flex-col items-center justify-center gap-6 ">
 
 			<section className="grid items-center gap-8 justify-center p-6 ">
