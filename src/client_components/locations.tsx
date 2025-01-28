@@ -67,7 +67,7 @@ export const Locations = () => {
 			
 				<div className="font-fredoka text-lg sm:w-1/2 sm:text-xl md:w-1/2   justify-center p-6">
 				<div>
-				<span className="text-pink-400">Address: 727 N Broadway #125, Los Angeles, CA 90012</span>
+				<span className="text-pink-400">Address: 727 N Broadway #125, Los Angeles CA 90012</span>
         <ol >
    
           <li>Monday: Closed :)</li>
