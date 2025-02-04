@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function Footer() {
+export default function FAQs() {
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
 	const toggleAnswer = (index: number) => {
