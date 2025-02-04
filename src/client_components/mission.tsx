@@ -12,7 +12,7 @@ export const Mission = ()=>  {
         </div>
         
         <div className="grid align-center text-center items-center justify-center order-1 sm:order-2">
-          <img className="h-200 w-96 rounded-lg" src={sickoMode} alt="Sicko Mode" />
+          <img className="h-200 w-96 min-h-200 rounded-lg" src={sickoMode} alt="Sicko Mode" />
         </div>
   
       </section>
