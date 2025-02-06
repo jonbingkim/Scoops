@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'ice-cream': 'url("./imgs/icecream1.png")',
+      },
       fontFamily: {
         inter: ['Inter', 'sans-serif'], 
         lilita: ['Lilita One', 'sans-serif'],

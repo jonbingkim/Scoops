@@ -10,23 +10,25 @@ export const Locations = () => {
   {/* Scoops on York Section */}
   <section className="grid items-center gap-8 justify-center p-6 w-full max-w-4xl mx-auto">
     <div className="flex flex-col sm:flex-row text-center justify-evenly items-center">
-      <div className="flex justify-center w-full sm:w-1/2">
-        <img
-          className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300"
-          src={yorkpic}
-          alt="Scoops on York"
-        />
-        <div className="absolute flex">
-          <a
-            href="https://www.yelp.com/biz/scoops-los-angeles-4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 border-2 border-white bg-black bg-opacity-70 text-white text-lg font-bold hover:bg-opacity-90 rounded-md transition-all duration-300 transform hover:scale-110"
-          >
-            Scoops on York
-          </a>
-        </div>
-      </div>
+    <div className="flex justify-center w-full sm:w-1/2">
+      <div className="relative">
+        <img
+          className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300"
+          src={yorkpic}
+          alt="Scoops on York"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <a
+            href="https://www.yelp.com/biz/scoops-los-angeles-4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 border-2 border-white bg-black bg-opacity-70 text-white text-lg font-bold hover:bg-opacity-90 rounded-md transition-all duration-300 transform hover:scale-110"
+          >
+            Scoops on York
+          </a>
+        </div>
+      </div>
+    </div>
 
       <div className="font-fredoka text-lg sm:w-1/2 sm:text-xl md:w-1/2 justify-center p-6 w-full">
         <div>
@@ -49,20 +51,22 @@ export const Locations = () => {
   <section className="grid items-center gap-8 justify-center p-6 w-full max-w-4xl mx-auto">
     <div className="flex flex-col sm:flex-row text-center justify-evenly items-center">
       <div className="flex justify-center w-full sm:w-1/2">
-        <img
-          className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300"
-          src={chinatownpic}
-          alt="Scoops Chinatown"
-        />
-        <div className="absolute flex">
-          <a
-            href="https://www.yelp.com/biz/scoops-los-angeles-4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 border-2 border-white bg-black bg-opacity-70 text-white text-lg font-bold hover:bg-opacity-90 rounded-md transition-all duration-300 transform hover:scale-110"
-          >
-            Scoops Chinatown
-          </a>
+        <div className="relative">
+          <img
+            className="h-90 w-96 rounded-lg shadow-lg transition-transform duration-300"
+            src={chinatownpic}
+            alt="Scoops Chinatown"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <a
+              href="https://www.yelp.com/biz/scoops-los-angeles-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 border-2 border-white bg-black bg-opacity-70 text-white text-lg font-bold hover:bg-opacity-90 rounded-md transition-all duration-300 transform hover:scale-110"
+            >
+              Scoops Chinatown
+            </a>
+          </div>
         </div>
       </div>
 
