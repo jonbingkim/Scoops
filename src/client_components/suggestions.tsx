@@ -42,7 +42,7 @@ export const Suggestion = () => {
     } else {
       console.log("what the heck");
       setProfane(true)
-      window.alert('WHA TARE YOU DOING????')
+      window.alert(`WHAT DO YOU THINK YOU'RE DOING?!??!?!`)
       //think of using modal 
     }
   };
@@ -50,56 +50,15 @@ export const Suggestion = () => {
   return (
     <div> 
       {profane ? (
-        <div className="flex absolute overflow">
-          <div>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          </div>
-          <div>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          </div>
-          <div>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          </div>
-          <div>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          <img src={dinkdonk}/>
-          </div>
-      
-     
-
-          </div>
+        <div className="flex">
+          {[...Array(12)].map((_, index) => (
+            <img key={index} src={dinkdonk} alt="dinkdonk emote" />
+          ))}
+        </div>
       ) : (
-        <div>
-        Brown Bread
-          </div>
+        <div>Brown bread</div>
       )}
+
     <div className="flex justify-center items-center min-h-screen">
       <form
         onSubmit={handlesubmit}
