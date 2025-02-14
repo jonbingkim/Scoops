@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Header from "./header";
 import dinkdonk from '../imgs/dinkdonk-emote.gif';
 
 interface Map {
@@ -17,10 +18,20 @@ const map: Map = {
 export const Suggestion = () => {
   const [suggestion, setSuggestion] = useState("");
   const [profane, setProfane] = useState(false);
-
+  const [flavors, setFlavors] = useState([])
   useEffect(() => {
-    // You can add any side effects related to `profane` here if needed
-  }, [profane]);
+    const flavorData = async () => {
+      try {
+        const res = await axios.get('http://localhost:3000/');
+        console.log(res)
+        const flavors = res.data.flavors
+        setFlavors(flavors)
+      } catch (err) {
+        console.log('error found')
+      }
+    }
+    flavorData()
+  }, [flavors.length]);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -32,14 +43,18 @@ export const Suggestion = () => {
     console.log(newStr);
 
     try {
+      // trying to see fi i need to use this either if im using filtering with perspective and openAI 
       const res = await axios.get<boolean>(
         `https://www.purgomalum.com/service/containsprofanity?text=${newStr}`
       );
-      console.log(res.data);
+
       if (res.data === false) {
-        console.log("hello!");
+       await axios.post('http://localhost:3000/suggestion' ,{
+          'text' : newStr
+        })
+       console.log('heey from post')
       } else {
-        console.log("what the heck");
+    
         setProfane(true);
       }
     } catch (error) {
@@ -50,13 +65,28 @@ export const Suggestion = () => {
   return (
     <div className="">
       {profane ? (
-        <div className="flex absolute justify-center items-center bg-white bg-opacity-90">
+        <div className="items-center text-center">
+          <div className="flex justify-center items-center bg-white bg-opacity-90">
           {[...Array(13)].map((_, index) => (
             <img key={index} src={dinkdonk} alt="dinkdonk emote" className="" />
           ))}
+          </div>
+          <div>
+            excuse me what do you think you're doing?
+          </div>
+
+       
         </div>
       ) : (
         <div className="flex justify-center items-center min-h-screen">
+            {flavors.length > 0 ? (
+              flavors.map((flavor, idx) => (
+                <div key={idx}>{flavor}</div>
+              ))
+            ) : (
+              <div>No flavors available</div>
+            )}
+
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 items-center"
@@ -79,4 +109,10 @@ export const Suggestion = () => {
       )}
     </div>
   );
+  // return (
+  //   <div>
+  //   <Header/>
+  //   <h3 className="text-center justify-center items-center text-xl">COMING SOON!</h3>
+  //   </div>
+  // )
 };

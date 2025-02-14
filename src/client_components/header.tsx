@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, Links } from "react-router";
 import logo from "../imgs/scoops_large.png";
 export default function Header() {
 
@@ -14,7 +14,9 @@ export default function Header() {
 
   {/* Logo */}
   <div className="order-1 sm:order-2">
+    <Link to={"/"}>
     <img className="h-80 w-auto" src={logo} alt="Logo" />
+    </Link>
   </div>
 
   {/* FAQs */}
